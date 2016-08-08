@@ -15,6 +15,9 @@
             <a href="#">Фото и видео</a>
           </li>
           <li>
+            <a href="#"><img src="http://placehold.it/137x70" width="137" height="70" alt=""></a>
+          </li>
+          <li>
             <a href="#">Карта штата</a>
           </li>
           <li>
@@ -25,6 +28,7 @@
       <div class="main-photo">
         <img src="http://placehold.it/1200x800" width="1200" height="800" alt="Добро пожаловать в Седону!">
         <!-- Непонятные размеры рисунка -->
+        <img src="http://placehold.it/1200x57" width="1200" height="57" alt="">
         <span class="logo"></span>
         <h3>Седона - небольшой городок в Аризоне,</br>
           заслуживающий большего!</h3>
@@ -43,24 +47,27 @@
             там течет своя жизнь</p>
         </div>
         <div class="photo-one">
-          <img src="http://placehold.it/800x256" width="800" height="256" alt="Городок Седона">
+          <img src="http://placehold.it/800x401" width="800" height="256" alt="Городок Седона">
         </div>
       </div>
       <div class="advice">
         <div class="housing">
-          <span class="house"></span>
+          <img src="http://placehold.it/74x69" width="74" height="69" alt="Дом">
+        </div>
           <h3>Жилье</h3>
           <p>Рекомендуем пожить в настоящем</br>
             мотеле, все как в кино!</p>
         </div>
         <div class="food">
-          <span class="burger"></span>
+          <img src="http://placehold.it/74x69" width="74" height="69" alt="Бургер">
+        </div>
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер</br>
             вы не разочаруетесь!</p>
         </div>
         <div class="souvenir">
-          <span class="giftbox"></span>
+          <img src="http://placehold.it/74x69" width="74" height="69" alt="Сувенир">
+        </div>
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного</br>
             производства!</p>
@@ -68,7 +75,7 @@
       </div>
       <div class="two">
         <div class="photo-one">
-          <img src="http://placehold.it/800x256" width="800" height="256" alt="Мост Дьявола">
+          <img src="http://placehold.it/800x401" width="800" height="256" alt="Мост Дьявола">
         </div>
         <div class="fact-two">
           <h3>Там есть</br>
@@ -113,12 +120,42 @@
         <h2>Заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки,</br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="search">
+        <button type="button" class="search">Поиск гостиницы в Седоне
           <fieldset>
-            <legend class="search-name">Поиск гостиницы в Седоне</legend>
-            
-
-
-
-
+            <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016" <span class="calendar"></span></label>
+            <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016" <span class="calendar"></span></label>
+            <label>Взрослые:<span class="minus"></span><output name="adult">2</output><span class="plus"></span></label>
+            <label>Дети:<span class="minus"><output name="child">0</output><span class="plus"></span></label>
+            <button class="find" type="submit">Найти</button>
+          </fieldset>
         </button>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/1200x594" width="1200" height="594" alt="Карта">
+        <!-- На шаблоне ширина  1199!!! -->
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-hashtag">
+          <p>#visitsedona</p>
+        </section>
+        <section class="footer-social">
+          <div class="icon">
+            <span class="tw"></span>
+          </div>
+          <div class="icon">
+            <span class="fb"></span>
+          </div>
+          <div class="icon">
+            <span class="yt"></span>
+          </div>
+        </section>
+        <section class="footer-copyright">
+          <p>website by</p>
+          <a class="logo" href="https://htmlacademy.ru"><img src="http://placehold.it/113x39" width="113" height="39" alt="HTMLacademy"></a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
