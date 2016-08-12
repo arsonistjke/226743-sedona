@@ -4,3 +4,65 @@
     <meta charset="utf-8">
     <title>Выбор гостиницы</title>
   </head>
+  <body>
+  <header class="main-header">
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#"><img src="http://placehold.it/137x70" width="137" height="70" alt=""></a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="#">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="selection">
+      <form class="pick">
+        <fieldset class="check">
+          <legend class="headline">Инфраструктура</legend>
+          <label><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
+          <label><input type="checkbox" name="parking" value="parking">Парковка</label>
+          <label><input type="checkbox" name="wifi" value="wifi">Wi-Fi</label>
+        </fieldset>
+        <fieldset class="check">
+          <legend class="headline">Тип жилья</legend>
+          <label><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
+          <label><input type="checkbox" name="motel" value="motel">Мотель</label>
+          <label><input type="checkbox" name="apartments" value="apartments">Апартаменты</label>
+        </fieldset>
+        <fieldset class="range">
+          <legend class="price">Стоимость в сутки (Р)</legend>
+          <div>
+            <span>от 0</span>
+            <span>до 3000</span>
+          <input type="range" name="price" value="price" min="0" max="300" step="1">
+        </fieldset>
+        <button class="show" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="sorting">
+      <span>Найдено: 3</span>
+      <span>Сортировка</span>
+      <ul>
+        <li>
+          <a class="sort" href="#">По цене</a>
+        </li>
+        <li>
+          <a class="sort" href="#">По типу</a>
+        </li>
+        <li>
+          <a class="sort" href="#">По рейтингу</a>
+        </li>
+      </ul>
+      <div class="arrows"></div>
+    </section>
+    
