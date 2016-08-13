@@ -115,18 +115,21 @@
         <h2>Заинтересовались?</h2>
         <p>укажите предполагаемые даты поездки,<br>
           и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button" class="search">Поиск гостиницы в Седоне
+        <form class="search">
+          <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
           <fieldset>
             <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="calendar"></span></label>
             <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="calendar"></span></label>
             <label>Взрослые:<span class="minus"></span><output name="adult">2</output><span class="plus"></span></label>
-            <label>Дети:<span class="minus"><output name="child">0</output><span class="plus"></span></label>
-            <button class="find" type="submit">Найти</button>
+            <label>Дети:<span class="minus"></span><output name="child">0</output><span class="plus"></span></label>
+            <!-- Не знаю как правильно задавать "-" "+" для выбора количества человек. span либо пвсевдоэлементы? -->
           </fieldset>
-        </button>
+          <button class="find" type="submit">Найти</button>
+        </form>
       </section>
       <div class="map">
         <img src="http://placehold.it/1718x748" width="1718" height="748" alt="Карта">
+        <!-- Оставил картринку в таком же разрешении как и в макете, позиционирую через css -->
       </div>
     </main>
     <footer class="main-footer">
