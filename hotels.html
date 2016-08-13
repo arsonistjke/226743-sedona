@@ -7,24 +7,23 @@
   <body>
     <header class="main-header">
       <nav class="main-menu">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li>
-            <a href="#"><img src="http://placehold.it/137x70" width="137" height="70" alt=""></a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
-        </ul>
+        <nav class="main-menu">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+          </ul>
       </nav>
+      <a href="#"><img src="http://placehold.it/137x70" width="137" height="70" alt=""></a>
     </header>
     <main>
       <section class="selection">
@@ -44,16 +43,21 @@
           <fieldset class="range">
             <legend class="price">Стоимость в сутки (Р)</legend>
             <div>
-              <span>от 0</span>
-              <span>до 3000</span>
-              <input type="range" name="price" value="price" min="0" max="300" step="1">
+              <label>от<input type="number" name="from" value="0"></label>
+              <label>до<input type="number" name="to" value="3000"></label>
+              <div class="range">
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
             </fieldset>
             <button class="show" type="submit">Показать</button>
           </form>
         </section>
+        <div class="result">
+          Найдено: 3
+        </div>
         <section class="sorting">
-          <h2>Найдено: 3</h2>
-          <span>Сортировка</span>
+          <h5>Сортировка</h5>
           <ul>
             <li>
               <a class="sort" href="#">По цене</a>
@@ -66,62 +70,63 @@
             </li>
           </ul>
           <div class="arrows"></div>
+          <!-- Через псевдоэлементы задаем сами стрелки -->
         </section>
         <section class="hotel-list">
           <article class="hotel-review">
             <img src="http://placehold.it/135x90" width="135" height="90" alt="Amara">
-            <h2>Amara resort & spa</h2>
-            <div class="hotel-type">
+            <div class="hotel-header">
+              <h2>Amara resort & spa</h2>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <div class="hotel-info">
               <p>Гостиница</p>
+              <p>от 3500 Р.</p>
+            </div>
+            <div class="hotel-control">
               <a class="more" href="#">Подробнее</a>
-          </div>
-          <div class="hotel-price">
-            <p>от 3500 Р.</p>
-            <a class="book" href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <p>Рейтинг: 8,5</p>
-          </div>
-        </article>
-        <article class="hotel-review">
-          <img src="http://placehold.it/135x90" width="135" height="90" alt="Desert">
-          <h2>Desert Quail Inn</h2>
-          <div class="hotel-type">
-            <p>Мотель</p>
-            <a class="more" href="#">Подробнее</a>
-          </div>
-          <div class="hotel-price">
-            <p>от 2000 Р.</p>
-            <a class="book" href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <span></span>
-            <span></span>
-            <p>Рейтинг: 8,9</p>
-          </div>
-        </article>
-        <article class="hotel-review">
-          <img src="http://placehold.it/135x90" width="135" height="90" alt="Villas">
-          <h2>Villas at Poco Diablo</h2>
-          <div class="hotel-type">
-            <p>Апартаменты</p>
-            <a class="more" href="#">Подробнее</a>
-          </div>
-          <div class="hotel-price">
-            <p>от 4000 Р.</p>
-            <a class="book" href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <span></span>
-            <span></span>
-            <span></span>
-            <p>Рейтинг: 9,2</p>
-          </div>
-        </article>
+              <a class="book" href="#">Забронировать</a>
+              <span class="rating">Рейтинг: 8,5</span>
+            </div>
+          </article>
+          <article class="hotel-review">
+            <img src="http://placehold.it/135x90" width="135" height="90" alt="Desert">
+            <div class="hotel-header">
+              <h2>Desert Quail Inn</h2>
+              <span class="star"></span>
+              <span class="star"></span>
+              </div>
+            <div class="hotel-info">
+              <p>Мотель</p>
+              <p>от 2000 Р.</p>
+            </div>
+            <div class="hotel-control">
+              <a class="more" href="#">Подробнее</a>
+              <a class="book" href="#">Забронировать</a>
+              <span class="rating">Рейтинг: 8,9</p>
+            </div>
+          </article>
+          <article class="hotel-review">
+            <img src="http://placehold.it/135x90" width="135" height="90" alt="Villas">
+            <div class="hotel-header">
+              <h2>Villas at Poco Diablo</h2>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <div class="hotel-info">
+              <p>Апартаменты</p>
+              <p>от 4000 Р.</p>
+            </div>
+            <div class="hotel-control">
+              <a class="more" href="#">Подробнее</a>
+              <a class="book" href="#">Забронировать</a>
+              <span class="rating">Рейтинг: 9,2</span>
+            </div>
+          </article>
       </section>
       </main>
       <footer class="main-footer">
@@ -132,11 +137,7 @@
         <section class="footer-social">
           <div class="icon">
             <a href="#"><span class="tw"></span></a>
-          </div>
-          <div class="icon">
             <a href="#"><span class="fb"></span></a>
-          </div>
-          <div class="icon">
             <a href="#"><span class="yt"></span></a>
           </div>
         </section>
