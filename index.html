@@ -6,149 +6,155 @@
     <title>Настоящий городок -№1- Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-menu">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-          <li>
-            <a href="#">Гостиницы</a>
-          </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
-    </header>
-      <div class="main-photo">
-        <img src="img/background-photo.jpg" width="1200" height="800" alt="Пейзажи Седоны">
-        <img src="img/background-text.png" width="458" height="352" alt="Добро пожаловать в Седону!">
-        <img src="img/background-pattern.png" width="1200" height="57" alt="">
-        <span class="logo"></span>
-        <h3>Седона - небольшой городок в Аризоне,<br>
-          заслуживающий большего!</h3>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
-    <main class="container">
-      <section class="one">
-        <article class="fact-blue">
-          <h3>Настоящий<br>
-            городок</h3>
-          <div class="number">
-            №1
-          </div>
-          <p>Седона - не аттракцион для туристов<br>
-            там течет своя жизнь</p>
-        </article>
-        <div class="photo-one">
-          <img src="img/photo-one.jpg" width="800" height="400" alt="Городок Седона">
+    <div class="shadow">
+      <header class="main-header">
+        <nav class="main-menu">
+          <ul>
+            <li class="left">
+              <a href="#">Информация</a>
+            </li>
+            <li class="left">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li  class="right">
+              <a href="#">Гостиницы</a>
+            </li>
+            <li class="right">
+              <a href="#">Карта штата</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-logo">
+          <a href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
         </div>
-      </section>
-      <section class="advice">
-        <article class="advice-part">
-          <img src="img/advice-house.png" width="75" height="72" alt="Дом">
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем<br>
-            мотеле, все как в кино!</p>
-        </article>
-        <article class="advice-part">
-          <img src="img/advice-food.png" width="74" height="70" alt="Бургер">
-          <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер<br>
-            вы не разочаруетесь!</p>
-        </article>
-        <article class="advice-part">
-          <img src="img/advice-souvenir.png" width="64" height="76" alt="Сувенир">
-          <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного<br>
-            производства!</p>
-        </article>
-      </section>
-      <section class="two">
-        <div class="photo-two">
-          <img src="img/photo-two.jpg" width="800" height="400" alt="Мост Дьявола">
+      </header>
+        <div class="main-photo">
+          <img src="img/background-photo.jpg" width="1200" height="800" alt="Пейзажи Седоны">
+          <img src="img/background-text.png" width="458" height="352" alt="Добро пожаловать в Седону!">
+          <img src="img/background-pattern.png" width="1200" height="57" alt="">
+          <span class="logo"></span>
         </div>
-        <article class="fact-blue">
-          <h3>Там есть<br>
-            Мост Дьявола</h3>
-          <div class="number">
-            №2
-          </div>
-          <p>Да, по нему можно пройти! Если конечно<br>
-            Вы осмелитесь</p>
-        </article>
-      </section>
-      <section class="three-five">
-        <article class="fact-gray">
-          <h3>Небольшая<br>
-            площадь</h3>
-          <div class="number">
-            №3
-          </div>
-          <p>Все достопримечательноти<br>
-            находятся очень близко</p>
-        </article>
-        <article class="fact-gray">
-          <h3>Красивая<br>
-            дорога</h3>
-          <div class="number">
-            №4
-          </div>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>
-            не скучно</p>
-        </article>
-        <article class="fact-gray">
-          <h3>Мало<br>
-            туристов</h3>
-          <div class="number">
-            №5
-          </div>
-          <p>Большинство едет в Гнанд Каньон и<br>
-            толпится там</p>
-        </article>
-      </section>
-      <section class="hotel-search">
-        <span>Заинтересовались?</span>
-        <p>укажите предполагаемые даты поездки,<br>
-          и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <form class="search">
-          <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
-          <fieldset>
-            <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="calendar"></span></label>
-            <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="calendar"></span></label>
-            <label>Взрослые:<span class="minus"></span><output name="adult">2</output><span class="plus"></span></label>
-            <label>Дети:<span class="minus"></span><output name="child">0</output><span class="plus"></span></label>
-            <!-- Не знаю как правильно задавать "-" "+" для выбора количества человек. span либо пвсевдоэлементы? -->
-          </fieldset>
-          <button class="find" type="submit">Найти</button>
-        </form>
-      </section>
-      <div class="map">
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта">
-      </div>
-    </main>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-hashtag">
-          <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
-        </section>
-        <section class="footer-social">
-          <div class="icon">
-            <a href="#"><span class="tw"></span></a>
-            <a href="#"><span class="fb"></span></a>
-            <a href="#"><span class="yt"></span></a>
+        <div class="main-text">
+          <h2>Седона - небольшой городок в Аризоне,<br>
+            заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+      <main class="container">
+        <section class="one">
+          <article class="fact-blue">
+            <h3>Настоящий<br>
+              городок</h3>
+            <div class="number">
+              №1
+            </div>
+            <p>Седона - не аттракцион для туристов<br>
+              там течет своя жизнь</p>
+          </article>
+          <div class="photo-one">
+            <img src="img/photo-one.jpg" width="800" height="256" alt="Городок Седона">
           </div>
         </section>
-        <section class="footer-copyright">
-          <p>website by</p>
-          <a class="logo" href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="113" height="39" alt="HTMLacademy"></a>
+        <section class="advice">
+          <article class="advice-part">
+            <img src="img/advice-house.png" width="75" height="72" alt="Дом">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем<br>
+              мотеле, все как в кино!</p>
+          </article>
+          <article class="advice-part">
+            <img src="img/advice-food.png" width="74" height="70" alt="Бургер">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер<br>
+              вы не разочаруетесь!</p>
+          </article>
+          <article class="advice-part">
+            <img src="img/advice-souvenir.png" width="64" height="76" alt="Сувенир">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного<br>
+              производства!</p>
+          </article>
         </section>
-      </div>
-    </footer>
+        <section class="two">
+          <div class="photo-two">
+            <img src="img/photo-two.jpg" width="800" height="400" alt="Мост Дьявола">
+          </div>
+          <article class="fact-blue">
+            <h3>Там есть<br>
+              Мост Дьявола</h3>
+            <div class="number">
+              №2
+            </div>
+            <p>Да, по нему можно пройти! Если конечно<br>
+              Вы осмелитесь</p>
+          </article>
+        </section>
+        <section class="three-five">
+          <article class="fact-gray">
+            <h3>Небольшая<br>
+              площадь</h3>
+            <div class="number">
+              №3
+            </div>
+            <p>Все достопримечательноти<br>
+              находятся очень близко</p>
+          </article>
+          <article class="fact-gray">
+            <h3>Красивая<br>
+              дорога</h3>
+            <div class="number">
+              №4
+            </div>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>
+              не скучно</p>
+          </article>
+          <article class="fact-gray">
+            <h3>Мало<br>
+              туристов</h3>
+            <div class="number">
+              №5
+            </div>
+            <p>Большинство едет в Гнанд Каньон и<br>
+              толпится там</p>
+          </article>
+        </section>
+        <section class="hotel-search">
+          <span>Заинтересовались?</span>
+          <p>укажите предполагаемые даты поездки,<br>
+            и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+          <form class="search">
+            <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
+            <fieldset>
+              <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="calendar"></span></label>
+              <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="calendar"></span></label>
+              <label>Взрослые:<span class="minus"></span><output name="adult">2</output><span class="plus"></span></label>
+              <label>Дети:<span class="minus"></span><output name="child">0</output><span class="plus"></span></label>
+              <!-- Не знаю как правильно задавать "-" "+" для выбора количества человек. span либо пвсевдоэлементы? -->
+            </fieldset>
+            <button class="find" type="submit">Найти</button>
+          </form>
+        </section>
+        <div class="map">
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="container">
+          <section class="footer-hashtag">
+            <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
+          </section>
+          <section class="footer-social">
+            <div class="icon">
+              <a href="#"><span class="tw"></span></a>
+              <a href="#"><span class="fb"></span></a>
+              <a href="#"><span class="yt"></span></a>
+            </div>
+          </section>
+          <section class="footer-copyright">
+            <p>website by</p>
+            <a class="logo" href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="113" height="39" alt="HTMLacademy"></a>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

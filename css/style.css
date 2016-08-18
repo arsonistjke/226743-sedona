@@ -4,6 +4,12 @@ body {
   text-transform: uppercase;
   line-height: 21px;
   color: #333333;
+  width: auto;
+  padding: 0;
+  margin: 0 auto;
+}
+.shadow {
+  width: 1200px;
 }
 h2 {
   font-size: 21px;
@@ -21,4 +27,51 @@ h5 {
   line-height: 18px;
   font-weight: bold;
   color: #000000;
+}
+.main-menu ul .left {
+  float: left;
+  width: 20%;
+  height: 56px;
+  text-align: left;
+  background-color: white;
+  list-style-type: none;
+}
+.main-menu ul .right {
+  float: right;
+  width: 20%;
+  height: 56px;
+  text-align: right;
+  background-color: white;
+  list-style-type: none;
+}
+.main-menu ul a {
+  text-decoration: none;
+}
+.main-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  /*непонятные значения*/
+}
+.main-text {
+  min-height: 216px;
+  text-align: center;
+  background-color: white;
+}
+.container .one {
+  text-align: center;
+}
+.container .one .fact-blue {
+  float: left;
+  width: 34%;
+  min-height: 256px;
+}
+.container .one .photo-one {
+  float: right;
+  width: 66%;
+}
+.ontainer .one::after {
+  clear: both;
+  content="";
 }
