@@ -6,7 +6,7 @@ body {
   color: #333333;
   width: auto;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 .shadow {
   width: 1200px;
@@ -28,7 +28,11 @@ h5 {
   font-weight: bold;
   color: #000000;
 }
-.main-menu ul .left {
+.main-header {
+  min-height: 56px;
+  background: yellow;
+}
+/*.main-menu ul .left {
   float: left;
   width: 20%;
   height: 56px;
@@ -46,32 +50,76 @@ h5 {
 }
 .main-menu ul a {
   text-decoration: none;
-}
+}*/
 .main-logo {
+  width: 256px;
   position: absolute;
   top: 0;
   left: 50%;
   right: 50%;
   /*непонятные значения*/
 }
+/*main!!!!!!!!!!*/
+.bckground-photo {
+
+}
+.background-text {
+  width: 458px;
+  height: 352px;
+  background: yellow;
+}
 .main-text {
-  min-height: 216px;
+  min-height: 209px;
   text-align: center;
   background-color: white;
 }
-.container .one {
+.container {
   text-align: center;
 }
 .container .one .fact-blue {
   float: left;
-  width: 34%;
+  width: 400px;
   min-height: 256px;
 }
 .container .one .photo-one {
   float: right;
-  width: 66%;
+  width: 800px;
 }
-.ontainer .one::after {
+.container .one::after {
   clear: both;
+  display: table;
   content="";
+}
+.advice-part {
+  float: left;
+  width: 400px;
+  min-height: 330px;
+}
+.advice-part::after {
+  clear: both;
+  display: table;
+  content="";
+}
+.container .two {
+  background: yellow;
+}
+.container .two .photo-two {
+  float: left;
+  width: 800px;
+}
+.container .two .fact-blue {
+  float: right;
+  width: 400px;
+  min-height: 256px;
+}
+.container .two::after {
+  clear: both;
+  display: table;
+  content="";
+}
+.container .fact-gray {
+  float: left;
+  width: 400px;
+  min-height: 256px;
+  background: yellow;
 }
