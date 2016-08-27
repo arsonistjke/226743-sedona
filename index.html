@@ -6,20 +6,20 @@
     <title>Настоящий городок -№1- Седона</title>
   </head>
   <body>
-    <div class="shadow">
+    <div class="container">
       <header class="main-header">
-        <nav class="main-menu">
+        <nav class="main-menu clearfix">
           <ul>
-            <li class="left">
+            <li class="main-menu-left">
               <a href="#">Информация</a>
             </li>
-            <li class="left">
+            <li class="main-menu-left">
               <a href="#">Фото и видео</a>
             </li>
-            <li  class="right">
+            <li  class="main-menu-right">
               <a href="#">Гостиницы</a>
             </li>
-            <li class="right">
+            <li class="main-menu-right">
               <a href="#">Карта штата</a>
             </li>
           </ul>
@@ -28,7 +28,7 @@
           <a href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
         </div>
       </header>
-      <main class="container">
+      <main>
         <div class="background-photo">
           <img src="img/background-photo.jpg" width="1200" height="800" alt="Пейзажи Седоны">
         </div>
@@ -44,7 +44,7 @@
               заслуживающий большего!</h2>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <section class="one">
+        <section class="one clearfix">
           <article class="fact-blue">
             <h3>Настоящий<br>
               городок</h3>
@@ -58,7 +58,7 @@
             <img src="img/photo-one.jpg" width="800" height="256" alt="Городок Седона">
           </div>
         </section>
-        <section class="advice">
+        <section class="advice clearfix">
           <article class="advice-part">
             <img src="img/advice-house.png" width="75" height="72" alt="Дом">
             <h3>Жилье</h3>
@@ -78,7 +78,7 @@
               производства!</p>
           </article>
         </section>
-        <section class="two">
+        <section class="two clearfix">
           <article class="fact-blue">
             <h3>Там есть<br>
               Мост Дьявола</h3>
@@ -92,7 +92,7 @@
             <img src="img/photo-two.jpg" width="800" height="256" alt="Мост Дьявола">
           </div>
         </section>
-        <section class="three-five">
+        <section class="three-five clearfix">
           <article class="fact-gray">
             <h3>Небольшая<br>
               площадь</h3>
@@ -125,16 +125,21 @@
           <span>Заинтересовались?</span>
           <p>укажите предполагаемые даты поездки,<br>
             и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <form class="search">
+          <div class="search">
+            <div class="search-btn">
             <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
+          </div>
+          <form class="search">
             <fieldset>
-              <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="calendar"></span></label>
-              <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="calendar"></span></label>
-              <label>Взрослые:<span class="minus"></span><output name="adult">2</output><span class="plus"></span></label>
-              <label>Дети:<span class="minus"></span><output name="child">0</output><span class="plus"></span></label>
+              <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="icon-calendar"></span></label>
+              <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="icon-calendar"></span></label>
+              <label>Взрослые:<span class="ico-minus"></span><output name="search-adult">2</output><span class="icon-plus"></span></label>
+              <label>Дети:<span class="icon-minus"></span><output name="search-child">0</output><span class="icon-plus"></span></label>
               <!-- Не знаю как правильно задавать "-" "+" для выбора количества человек. span либо пвсевдоэлементы? -->
             </fieldset>
-            <button class="find" type="submit">Найти</button>
+            <div class="search-button">
+              <button class="find" type="submit">Найти</button>
+            </div>
           </form>
         </section>
         <div class="map">
