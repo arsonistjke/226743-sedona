@@ -8,8 +8,7 @@
   <body>
     <div class="container">
       <header class="main-header">
-        <nav class="main-menu">
-          <!-- работает без clearfix -->
+        <nav class="main-menu clearfix">
           <ul>
             <li class="main-menu-left">
               <a href="#">Информация</a>
@@ -25,26 +24,21 @@
             </li>
           </ul>
         </nav>
-        <div class="main-logo">
-          <a href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
-        </div>
+        <a class="main-logo" href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
       </header>
       <main>
-        <div class="background-photo">
-          <img src="img/background-photo.jpg" width="1200" height="800" alt="Пейзажи Седоны!">
+        <div class="background">
+          <img class="background-text" src="img/background-text.png" width="458" height="352" alt="Добро пожаловать в Седону!">
+          <div class="background-body">
+            <h4>Седона - небольшой городок в Аризоне,<br>
+                заслуживающий большего!</h4>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
         </div>
-        <div class="background-text">
-          <img src="img/background-text.png" width="458" height="352" alt="Добро пожаловать в Седону!">
-        </div>
-        <div class="background-pattern">
+        <!-- <div class="background-pattern">
           <img src="img/background-pattern.png" width="1200" height="57" alt="">
-        </div>
+        </div> -->
           <!-- <span class="logo"></span> -->
-        <div class="main-text">
-          <h2>Седона - небольшой городок в Аризоне,<br>
-              заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
         <section class="one clearfix">
           <article class="fact-blue">
             <h3>Настоящий<br>
