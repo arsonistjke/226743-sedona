@@ -6,6 +6,22 @@
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"),
+       url("../fonts/ptsans.woff2") format("woff2");
+}
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"),
+       url("../fonts/ptsansbold.woff2") format("woff2");
+}
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
@@ -163,31 +179,53 @@ h5 {
 }
 .fact {
   position: relative;
-  padding-right: 66%;
+  padding-right: 800px;
   color: #ffffff;
   background-color: #81b3d2;
 }
 .fact-body {
-  padding: 50px 55px;
+  padding: 54px 40px 52px;
   /*почему не 59???*/
   text-align: center;
   box-sizing: border-box;
 }
 .fact-body h3 {
-  margin: 0 73px 23px;
-   /*как считать????*/
+  margin: 0 0 24px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
 }
 .fact-body p {
   margin: 0 0 21px;
 }
-/*.fact-body p:last-child {
-  margin: 0 0 53px;
-}*/
+.fact-body p:last-child {
+  margin: 0;
+}
+.fact-number {
+  position: relative;
+  display: inline-block;
+}
+.fact-number::before,
+.fact-number::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -1px;
+  width: 9px;
+  border-bottom: 2px solid;
+  content: "";
+}
+.fact-number::before {
+  left: -14px;
+}
+.fact-number::after {
+  right: -14px;
+}
 .fact-image {
   position: absolute;
   top: 0;
   right: 0;
-  width: 66%;
+  width: 800px;
   height: 100%;
   overflow: hidden;
 }
@@ -204,19 +242,26 @@ h5 {
   float: left;
   width: 400px;
   text-align: center;
+  padding: 56px 30px 83px;
+  box-sizing: border-box;
 }
 .advice-part img {
-  margin-top: 60px;
   margin-bottom: 29px;
 }
 .advice-part h3 {
-  margin-bottom: 23px;
+  margin: 0 0 23px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
 }
 .advice-part p {
-  margin-bottom: 83px;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
 }
+
 .fact.right {
-  padding-left: 66%;
+  padding-left: 800px;
   padding-right: 0;
 }
 .fact.right .fact-image {
@@ -227,13 +272,19 @@ h5 {
   float: left;
   width: 400px;
   text-align: center;
-  padding: 47px 65px 59px;
+  padding: 47px 40px 59px;
   background: #eeeeee;
   box-sizing: border-box;
 }
 .facts-part h3 {
   font-size: 21px;
   margin: 0 0 24px;
+}
+.facts-part p {
+  margin: 0 0 21px;
+}
+.facts-part p:last-child {
+  margin: 0;
 }
 .text-before-search {
   padding: 56px 0 133px;
@@ -382,36 +433,62 @@ h5 {
 /*конец hotels!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .main-footer {
-  padding: 57px 0;
+  padding: 36px 0;
   text-align: center;
   font-size: 19px;
   line-height: 26px;
-
+  background: rgba(255, 255, 255, 0.9);
+}
+.main-footer .container {
+  font-size: 0;
 }
 .footer-hashtag {
-  float: left;
+  display: inline-block;
   font-size: 21px;
   width: 400px;
   font-weight: 700;
+  vertical-align: middle;
 }
 .footer-hashtag a {
   text-decoration: none;
 }
 .footer-social {
-  float: left;
+  display: inline-block;
   width: 400px;
   vertical-align: middle;
 }
 .icon-social {
   display: inline-block;
   width: 46px;
-  height: 48px;
+  font-size: 22px;
+  line-height: 48px;
   margin-left: 6px;
   color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
+  box-sizing: border-box;
+}
+.icon-social [class^="icon-"],
+.icon-social [class*=" icon-"] {
+  width: 1em;
+  height: 1em;
 }
 .footer-copyright {
-  float: left;
+  display: inline-block;
   width: 400px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.footer-copyright span {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.footer-copyright .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-copyright img {
+  display: inline-block;
+  vertical-align: middle;
 }
