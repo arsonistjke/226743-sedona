@@ -27,40 +27,42 @@
         <a class="main-logo" href="#"><img src="img/logo.png" width="138" height="70" alt=""></a>
       </header>
       <main>
-        <div class="filter-background">
-          <form class="filter-pick">
-            <fieldset class="check">
-              <legend class="headline">Инфраструктура</legend>
-              <label><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" name="parking" value="parking">Парковка</label>
-              <label><input type="checkbox" name="wifi" value="wifi">Wi-Fi</label>
-            </fieldset>
-            <fieldset class="filter-check">
-              <legend class="headline">Тип жилья</legend>
-              <label><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
-              <label><input type="checkbox" name="motel" value="motel">Мотель</label>
-              <label><input type="checkbox" name="apartments" value="apartments">Апартаменты</label>
-            </fieldset>
-            <fieldset class="filter-range">
-              <legend class="filter-price">Стоимость в сутки (Р)</legend>
-              <div>
-                <label class="min-price">от
-                  <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">до
-                    <input type="text" name="max-price" value="3000">
-                </label>
-              </div>
-              <div class="range-controls">
-                <div class="scale">
-                    <div class="bar"></div>
+        <div class="filter">
+          <!-- <div class="filter-background"> -->
+            <form class="filter-pick clearfix">
+              <fieldset class="infra-check">
+                <legend class="headline">Инфраструктура</legend>
+                <label class= "icon-check-on"><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
+                <label><input type="checkbox" name="parking" value="parking">Парковка</label>
+                <label><input type="checkbox" name="wifi" value="wifi">Wi-Fi</label>
+              </fieldset>
+              <fieldset class="housing-check">
+                <legend class="headline">Тип жилья</legend>
+                <label><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
+                <label><input type="checkbox" name="motel" value="motel">Мотель</label>
+                <label><input type="checkbox" name="apartments" value="apartments">Апартаменты</label>
+              </fieldset>
+              <fieldset class="filter-range">
+                <legend class="filter-price">Стоимость в сутки (Р)</legend>
+                <div>
+                  <label class="min-price">от
+                    <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">до
+                      <input type="text" name="max-price" value="3000">
+                  </label>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <button class="show" type="submit">Показать</button>
-            </fieldset>
-          </form>
+                <div class="range-controls">
+                  <div class="scale">
+                      <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="show" type="submit">Показать</button>
+              </fieldset>
+            </form>
+          <!-- </div> -->
         </div>
         <div class="result">
           Найдено: 3
@@ -84,14 +86,14 @@
           </div>
         </section>
         <section class="hotel-list">
-          <article class="hotel-review">
+          <article class="hotel-review clearfix">
             <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Amara">
             <div class="hotel-header">
               <h2>Amara resort & spa</h2>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
             </div>
             <div class="hotel-info">
               <p>Гостиница</p>
@@ -107,8 +109,8 @@
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert">
             <div class="hotel-header">
               <h2>Desert Quail Inn</h2>
-              <span class="star"></span>
-              <span class="star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
               </div>
             <div class="hotel-info">
               <p>Мотель</p>
@@ -124,9 +126,9 @@
             <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas">
             <div class="hotel-header">
               <h2>Villas at Poco Diablo</h2>
-              <span class="star"></span>
-              <span class="star"></span>
-              <span class="star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
+              <span class="icon-star"></span>
             </div>
             <div class="hotel-info">
               <p>Апартаменты</p>
@@ -139,23 +141,21 @@
             </div>
           </article>
         </section>
-        </main>
-        <footer class="main-footer">
-          <div class="container">
-            <section class="footer-hashtag">
-              <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
-          </section>
-          <section class="footer-social">
-            <div class="icon">
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-youtube"></span></a>
-            </div>
-          </section>
-          <section class="footer-copyright">
-            <p>website by</p>
+      </main>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="footer-hashtag">
+            <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
+          </div>
+          <div class="footer-social">
+            <a class="icon-social" href="#"><span class="icon-twitter"></span></a>
+            <a class="icon-social" href="#"><span class="icon-facebook"></span></a>
+            <a class="icon-social" href="#"><span class="icon-youtube"></span></a>
+          </div>
+          <div class="footer-copyright">
+            <span>website by</span>
             <a class="logo" href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="113" height="39" alt="HTMLacademy"></a>
-          </section>
+          </div>
         </div>
       </footer>
     </div>
