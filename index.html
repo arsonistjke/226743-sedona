@@ -35,7 +35,7 @@
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </div>
         </div>
-        <section class="fact clearfix">
+        <section class="fact">
           <div class="fact-body">
             <h3>Настоящий городок</h3>
             <p>№1</p>
@@ -65,90 +65,75 @@
               производства!</p>
           </article>
         </section>
-        <section class="two clearfix">
-          <article class="fact-blue">
+        <section class="fact right">
+          <div class="fact-body">
             <h3>Там есть<br>
               Мост Дьявола</h3>
-            <div class="number">
-              №2
-            </div>
-            <p>Да, по нему можно пройти! Если конечно<br>
-              Вы осмелитесь</p>
-          </article>
-          <div class="photo-two">
-            <img src="img/photo-two.jpg" width="800" height="256" alt="Мост Дьявола">
+            <p>№2</p>
+            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+          </div>
+          <div class="fact-image">
+            <img src="img/photo-two.jpg" width="800" height="400" alt="Мост Дьявола">
           </div>
         </section>
-        <section class="three-five clearfix">
-          <article class="fact-gray">
+        <section class="facts clearfix">
+          <div class="facts-part">
             <h3>Небольшая<br>
               площадь</h3>
-            <div class="number">
-              №3
-            </div>
-            <p>Все достопримечательноти<br>
-              находятся очень близко</p>
-          </article>
-          <article class="fact-gray">
+            <p>№3</p>
+            <p>Все достопримечательноти находятся очень близко</p>
+          </div>
+          <div class="facts-part">
             <h3>Красивая<br>
               дорога</h3>
-            <div class="number">
-              №4
-            </div>
-            <p>Ехать в Седону из Лас-Вегаса совсем<br>
-              не скучно</p>
-          </article>
-          <article class="fact-gray">
+            <p>№4</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="facts-part">
             <h3>Мало<br>
               туристов</h3>
-            <div class="number">
-              №5
-            </div>
-            <p>Большинство едет в Гнанд Каньон и<br>
-              толпится там</p>
-          </article>
+            <p>№5</p>
+            <p>Большинство едет в Гнанд Каньон и толпится там</p>
+          </div>
         </section>
-        <section class="hotel-search">
+        <div class="text-before-search">
           <span>Заинтересовались?</span>
           <p>укажите предполагаемые даты поездки,<br>
             и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-          <div class="search">
-            <div class="search-btn">
-            <button class="hotel-search" type="button">Поиск гостиницы в Седоне</button>
-          </div>
-          <form class="search">
+        </div>
+        <div class="hotel-search">
+          <!-- <div class="hotel-search-btn"> -->
+            <button class="hotel-search-btn" type="button">Поиск гостиницы в Седоне</button>
+          <!-- </div> -->
+          <form class="hotel-search-field">
             <fieldset>
               <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="icon-calendar"></span></label>
               <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="icon-calendar"></span></label>
-              <label>Взрослые:<span class="ico-minus"></span><output name="search-adult">2</output><span class="icon-plus"></span></label>
+              <label>Взрослые:<span class="icon-minus"></span><output name="search-adult">2</output><span class="icon-plus"></span></label>
               <label>Дети:<span class="icon-minus"></span><output name="search-child">0</output><span class="icon-plus"></span></label>
-              <!-- Не знаю как правильно задавать "-" "+" для выбора количества человек. span либо пвсевдоэлементы? -->
-            </fieldset>
             <div class="search-button">
               <button class="find" type="submit">Найти</button>
             </div>
           </form>
-        </section>
+        </div>
         <div class="map">
           <img src="img/map.jpg" width="1200" height="593" alt="Карта">
         </div>
       </main>
       <footer class="main-footer">
         <div class="container">
-          <section class="footer-hashtag">
+          <div class="footer-hashtag">
             <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
-          </section>
-          <section class="footer-social">
-            <div class="icon">
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-youtube"></span></a>
-            </div>
-          </section>
-          <section class="footer-copyright">
-            <p>website by</p>
+          </div>
+          <div class="footer-social">
+            <a class="icon-social" href="#"><span class="icon-twitter"></span></a>
+            <a class="icon-social" href="#"><span class="icon-facebook"></span></a>
+            <a class="icon-social" href="#"><span class="icon-youtube"></span></a>
+          </div>
+          <div class="footer-copyright">
+            <span>website by</span>
             <a class="logo" href="https://htmlacademy.ru"><img src="img/academy-logo.png" width="113" height="39" alt="HTMLacademy"></a>
-          </section>
+          </div>
         </div>
       </footer>
     </div>
