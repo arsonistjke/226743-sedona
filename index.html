@@ -117,9 +117,24 @@
           <!-- </div> -->
           <form class="hotel-search-field">
             <fieldset>
-              <label>Дата заезда:<input type="text" name="date-in" value="24 апреля 2016"><span class="icon-calendar"></span></label>
-              <label>Дата выезда:<input type="text" name="date-out" value="4 июля 2016"><span class="icon-calendar"></span></label>
-              <label>Взрослые:<span class="icon-minus"></span><output name="search-adult">2</output><span class="icon-plus"></span></label>
+              <label>
+                <span class="label-class clearfix">Дата заезда:</span>
+                <input class="field" type="text" name="date-in" value="24 апреля 2016">
+                <span class="icon-calendar"></span>
+              </label>
+              <label>
+                <span class="label-class clearfix">Дата выезда:</span>
+                <input class="field" type="text" name="date-out" value="4 июля 2016">
+                <span class="icon-calendar"></span>
+              </label>
+              <label>
+                <span class="label-class clearfix">Взрослые:</span>
+                <div class="quantity-choose">
+                  <span class="icon-minus"></span>
+                  <input class="field" type="text" name="adult" value="0">
+                  <span class="icon-plus"></span>
+                </div>
+              </label>
               <label>Дети:<span class="icon-minus"></span><output name="search-child">0</output><span class="icon-plus"></span></label>
             <div class="search-button">
               <button class="find" type="submit">Найти</button>
@@ -131,7 +146,7 @@
         </div>
       </main>
       <footer class="main-footer">
-        <div class="container">
+        <div class="footer-container">
           <div class="footer-hashtag">
             <a href="https://www.instagram.com/explore/tags/visitsedona/">#visitsedona</a>
           </div>

@@ -66,9 +66,21 @@ body {
   margin: 0;
   padding: 0;
 }
+.field {
+  display: block;
+  width: 100%;
+  padding: 4px 13px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ebebeb;
+  border: 2px solid #ebebeb;
+  box-sizing: border-box;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: rgba(0, 1, 1, 0.2) 0px 0px 20px 2px;
   /*background: #ffffff;*/
 }
 /*h2 {
@@ -331,11 +343,56 @@ h5 {
   background-color: #ffffff;
 }
 .hotel-search-field fieldset {
-  border: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .hotel-search-field label {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 29px;
+}
+.hotel-search-field .label-class {
+  float: left;
   display: block;
-  height: 38px;
+  width: 112px;
+  line-height: 26px;
+  padding: 6px 0;
+}
+.hotel-search-field .field {
+  float: right;
+  width: 346px;
+}
+.hotel-search-field .icon-calendar {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+}
+.label-class .quantity-choose .field {
+  padding: 0 38px;
+  /*display: block;
+  width: 114px;*/
+}
+.label-class .quantity-choose {
+  position: relative;
+  float: right;
+  width: 114px;
+}
+.label-class .quantity-choose .icon-plus {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 38px;
+  transform: translateY(-50%);
+}
+.label-class .quantity-choose .icon-minus {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 38px;
+  transform: translateY(-50%);
+
 }
 
 
@@ -439,7 +496,7 @@ h5 {
   line-height: 26px;
   background: rgba(255, 255, 255, 0.9);
 }
-.main-footer .container {
+.main-footer .footer-container {
   font-size: 0;
 }
 .footer-hashtag {
